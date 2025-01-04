@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<head>
+    <title>VoiceVault - the ultimate solution to lock your messages away!</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+            $("#form").delay(4000).fadeIn(1000);
+            $("#dialog1").delay(5000).fadeIn(1000);
+        });
+    </script>
+    <br>
+    <center>
+        <div class="container">
+            <div class="typed-out">
+                <h1 style="font-size: 1.46em !important;"><span class="green">Voice</span><span class="blue">Vault</span><br>The ultimate tool to secure your voice messages from prying ears!</h1>
+            </div>
+        </div>
+
+        <form id="form" style="display: none;">
+            <input type="text" id="passwd" name="passwd" placeholder="Enter the password to encrypt/decrypt the vault!" class="form-control" required style="width: 28.5%; margin: 0;">
+            <br>
+            <button class="btn btn-primary" type="button" onclick="recording()" style="margin: 0;"><svg version="1.0" class="hidden" id="stop_record" xmlns="http://www.w3.org/2000/svg"
+                width="24" height="24" viewBox="0 0 256.000000 256.000000"
+                stroke="white"
+                preserveAspectRatio="xMidYMid meet">
+               <g transform="translate(0.000000,256.000000) scale(0.100000,-0.100000)"
+               fill="#ffffff" stroke="none">
+               <path d="M1135 2310 c-236 -37 -446 -147 -610 -321 -123 -130 -205 -278 -251
+               -454 -23 -85 -27 -122 -28 -245 -1 -190 26 -312 102 -465 71 -143 180 -276
+               305 -372 317 -244 755 -279 1113 -89 409 218 627 682 530 1131 -76 352 -338
+               650 -676 767 -135 47 -352 68 -485 48z m475 -655 c58 -30 60 -44 60 -375 0
+               -331 -2 -345 -60 -375 -43 -22 -617 -22 -660 0 -58 30 -60 44 -60 375 0 329 2
+               344 58 374 41 23 619 23 662 1z"/>
+               </g></svg>
+               <svg id="record" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mic h-4 w-4"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" x2="12" y1="19" y2="22"></line></svg></button>
+            <input type="file" id="file" name="file_decrypt" style="display: none;">
+            <button type="button" onclick="document.getElementById('file').click();" class="btn btn-light">Browse...</button>
+            <br>
+            <br>
+            <img src="dialog3.png" style="width: 20%; margin-right: 29vw;" id="dialog1" onclick="$('#dialog1').fadeOut(1000); $('#dialog2').delay(1000).fadeIn(1000);"></img>
+            <img src="dialog2.png" style="width: 20%; margin-left: 29vw; display: none;" id="dialog2" onclick="$('#dialog2').fadeOut(1000);"></img>
+            <br>
+            <img src="recording.png" class="hidden" style="width: 5%;" id="record1"></img>
+            <div class="hidden timer" id="timer">
+                <div class="hour">
+                    <p id="hour" class="hour">0:</p>
+                </div>
+                <div class="minute">
+                    <p id="minute" class="minute">0:</p>
+                </div>
+                <div class="second">
+                    <p id="second" class="second">0</p>
+                </div>
+            </div>
+            <br>
+            <div id="how-to-use" class="use" style="font-family: 'Georgia'; padding-left: 15px; backdrop-filter: blur(6px); border: 1px solid gray; width: 90%; border-radius: 10px; text-align: left !important;">
+                <u><h2>VoiceVault</h2></u>
+                <p>VoiceVault is your ultimate vault for voice security - record, encrypt, and share audio anywhere, anytime, any way with total confidence! Share it over email, drop it in public chats, or tease your friends with cryptic messages - only those select few with the password can unlock your secrets! Powered by military-grade encryption, VoiceVault puts you in control like never before - your voice, your rules, your way. Try VoiceVault today and secure your voice messages from prying ears!</p>
+            </div>
+        </form>
+        <p id="error"></p>
+    </center>
+</body>
+</html>

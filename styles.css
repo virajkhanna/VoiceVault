@@ -1,0 +1,84 @@
+body {
+    /* background-color: rgb(252, 200, 98) !important; */
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("main-background.png");
+}
+
+.typed-out h1 {
+    font-family: 'Georgia';
+}
+
+.green {
+    background-color: green;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.blue {
+    background-color: blue;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: inline-block;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.typed-out {
+    font-family: "Georgia";
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 4s steps(50, end) forwards;
+    font-size: 1.6rem;
+    width: 0;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+.timer .hour .minute .second {
+    display: inline !important;
+}
+
+.hour .minute .second {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.timer {
+    background-color: rgb(211,211,211,0.4);
+    width: 10%;
+}
+
+.hour {
+    display: inline-block;
+    float: left;
+    font-family: "Verdana";
+    font-size: 30px;
+    margin: 0;
+}
+.minute {
+    display: inline-block;
+    float: center;
+    font-family: "Verdana";
+    font-size: 30px;
+    margin: 0;
+}
+.second {
+    display: inline-block;
+    float: right;
+    font-family: "Verdana";
+    font-size: 30px;
+    margin: 0;
+}
+
+.typed-out span {
+    font-size: 1.5em !important;
+}
