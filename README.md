@@ -4,6 +4,6 @@ VoiceVault is your ultimate vault for voice security - record, encrypt, and shar
 ### How to use VoiceVault :-
 
 1. First, enter a password in the above dialog box to encrypt your audio. 
-2. Then, Click on the Recording Button to start recording your audio!
+2. Then, click on the Recording Button to start recording your audio!
 3. When done, click on the stop button, and your vault will be immediately created and downloaded!
 4. To Decrypt, enter the password for the vault, click on Browse and upload the vault, and watch as the opened vault is downloaded on to your PC!
