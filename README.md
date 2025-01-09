@@ -8,4 +8,4 @@ VoiceVault is your ultimate vault for voice security - record, encrypt, and shar
 3. When done, click on the stop button, and your vault will be immediately created and downloaded!
 4. To Decrypt, enter the password for the vault, click on Browse and upload the vault, and watch as the opened vault is downloaded on to your PC!
 
-AI Usage: I used GitHub Copilot assitively in Visual Studio Code for suggestions and slight bug fixes, but I am the code's original author.
+AI Usage: I used GitHub Copilot assitively in Visual Studio Code for suggestions and slight bug fixes, and DALL-E for an AI-Generated background image, but I am the code's original author.
